@@ -1,29 +1,34 @@
 # TENGlish Android 测试版下载
 
-[下载 Android APK（约 12 MB）](https://github.com/cleantengflight/tenglish-android-downloads/releases/download/v0.1.0-1/TENGlish-0.1.0-1-cn.apk) · [版本与校验文件](https://github.com/cleantengflight/tenglish-android-downloads/releases/tag/v0.1.0-1)
+[下载 Android APK（约 15.6 MB）](https://github.com/cleantengflight/tenglish-android-downloads/releases/download/v0.1.1-2/TENGlish-0.1.1-2-cn.apk) · [版本与校验文件](https://github.com/cleantengflight/tenglish-android-downloads/releases/tag/v0.1.1-2)
 
-这是 TENGlish 的安卓离线测试版，版本 **0.1.0（1）**，支持 Android 8.0 及以上。下载链接公开，无需登录 GitHub；此仓库仅提供安装包和使用说明，不公开应用源码。
+版本 **0.1.1（2）**，支持 Android 8.0 及以上。公开下载，无需登录 GitHub；本仓库只提供安装包和说明，不公开应用源码。
 
-内置 109 个生活场景、327 个学习任务及 687 条带来源的真实例句，提供中文/英文界面、默认隐藏的中文辅助、美式/英式系统朗读、收藏和错题复习。学习记录保存在设备本地。
+- 使用最新版 TENGlish 图标，首页、场景和“我的”沿用 iOS 的简洁布局。
+- 内置 109 个生活场景、327 个任务、687 条带来源的真实例句，以及 16 张授权场景照片。
+- 每日目标为 3 关，完成后可继续学习；支持中文辅助、英美系统朗读、收藏和复习。
+- 新增地区浏览，内置 256 份附来源与许可的 Wikipedia 英文导语；地区分类不用于切换服务器。
 
-当前没有 AI、账号、云同步或在线内容更新；这是测试包，并非安卓应用商店审核通过的正式版。朗读需要手机安装相应的离线英语音色。S26 Ultra、Pixel 9a 和 OPPO 的真机体验仍需测试反馈。
+本版没有 AI、账号、广告或云同步，昵称和学习记录保存在手机中。**课程下载与缓存已加入客户端，但 ION 内容服务部署仍受连接故障阻塞，在线更新尚不可用。随包课程和图片可离线使用。**
 
-## 安装
+这是公开下载的测试 APK，不代表已通过安卓应用商店审核。S26 Ultra、Pixel 9a 和 OPPO 的实际体验仍需真机反馈。朗读需要手机安装对应的离线英语音色。
 
-1. 下载上方 `.apk` 文件，在安卓手机中打开。
-2. 如系统询问，仅为本次使用的文件管理器或浏览器允许安装未知应用。
-3. 保留系统安全检查；后续使用同签名的新版本覆盖更新，不要为解决签名问题直接卸载。
+## 安装与升级
 
-[完整安装说明](INSTALL.md) · [隐私说明](PRIVACY.md)
+下载 `.apk` 后直接打开安装。已安装 0.1.0 的用户可覆盖更新；本版保持原包名与签名，已验证覆盖安装和收藏保留。遇到签名错误请反馈，不要直接卸载，以免丢失数据。保留系统安全检查。
 
-## 校验与许可
+[安装与使用](INSTALL.md) · [隐私说明](PRIVACY.md) · [本版更新](RELEASE_NOTES.md)
 
-APK SHA-256：
+## 校验与来源
+
+文件：`TENGlish-0.1.1-2-cn.apk`，15,583,930 字节。
+
+SHA-256：
 
 ```text
-20c920168430dd128734332f883da917a6fcc725223833cb4cd105ee41950ae0
+f5251094c195825b97fc00bbf1bc4787448d9deac9c2d8ba7d2b61d69900f719
 ```
 
-语料及软件许可、逐句来源均包含在 APK 的“内容与来源”页面。发行包另附校验文件。
+语料、照片、地区介绍和软件许可保留在 APK 的“内容与来源”及对应来源页面中。发行包另附校验文件。
 
 反馈：evan@cleantengflight.com
