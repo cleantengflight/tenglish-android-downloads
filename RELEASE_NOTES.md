@@ -1,35 +1,45 @@
-# TENGlish Android 0.1.1（2）
+# TENGlish Android 0.1.2（3）
 
-[下载 TENGlish-0.1.1-2-cn.apk](https://github.com/cleantengflight/tenglish-android-downloads/releases/download/v0.1.1-2/TENGlish-0.1.1-2-cn.apk)，约 15.6 MB。支持 Android 8.0 及以上；请下载 APK，不要下载 Source code 压缩包。
+[下载 TENGlish-0.1.2-3-cn.apk](https://github.com/cleantengflight/tenglish-android-downloads/releases/download/v0.1.2-3/TENGlish-0.1.2-3-cn.apk)，约 15.6 MB，支持 Android 8.0 及以上。请下载 APK，不要下载 Source code 压缩包。
 
 ## 本版更新
 
-- 换用已批准的最新版 V12 TENGlish 图标。
-- 首页、场景与“我的”对齐 iOS 布局，增加完整场景照片、16 类目录和更清晰的关卡入口。
-- 新增地区浏览，提供 256 份有来源与许可的英文导语；笔记本移至“我的”。
-- 保留 109 个场景、327 个任务、687 条来源例句，以及中文辅助、英美朗读、收藏与复习。
-- 加入统一 ION 课程下载、校验与本地缓存；无 AI、账号、云同步或学习资料上传。
+- 课程、场景照片和地区导语改为共用一套资源版本，支持与新版 iOS 使用相同内容。
+- 通过统一 ION 服务获取资源；相同文件复用本地副本，只下载变化部分。
+- 保留当前完整资源，整包校验后供下次完整启动使用；下载失败、内容损坏时可回退。
+- 启动、返回前台及跨本地零点时检查更新；成功后当天不重复，失败后至少间隔一小时再试。
+- 保留最新版 V12 图标、iOS 风格布局、收藏、复习、英文学习及可展开的中文辅助。
 
-**11 月 25 日线上更新：ION 课程服务已部署，全部 8 个文件与安卓实际下载、缓存加载均已验证。无需更新 APK。**地区页是学习分类，不代表服务器分区。
+本版不调用 AI，不增加账号、云同步、广告或学习资料上传。更新机制不代表每日自动新增课程或无限内容。
 
-## 验证情况
+## 随包内容与来源
 
-本轮 11 项 JVM 测试、4 项模拟器流程测试及 Release Lint 通过。实际签名 APK 的 V12 图标像素、签名连续性、资源完整性和 16 KB 对齐检查通过；覆盖安装后收藏保留已验证。
+共享资源版本：`shared-64f9c833c62676b521af`，共 27 个文件、4,993,540 字节。包含 109 个生活场景、327 个任务、687 条来源例句、16 张授权照片及 256 份英文地区导语。
 
-Samsung S26 Ultra、Pixel 9a 和 OPPO 的真机体验仍需反馈，模拟器验证不代表这些设备已验证。公开下载不代表已通过安卓应用商店审核。
+| 内容 | 来源与许可 |
+|---|---|
+| 场景课程、教学说明和迁移练习 | CleanTENGflight 编排；与第三方例句来源分别标明，不把全部练习说成语料原句 |
+| NGSL 1.2 | Charles Browne、Brent Culligan、Joseph Phillips；CC BY-SA 4.0；2,809 个排名词及 52 个补充词 |
+| Tatoeba 例句 | 674 条 CC BY 2.0 FR、13 条 CC0 1.0；逐句保留作者、原文链接、许可与哈希；中文翻译与选择元数据单独标明 |
+| 16 张场景照片 | 逐图保留 Wikimedia Commons 来源、摄影者、CC BY / CC BY-SA / CC0 许可和改动说明；原照片未改变，显示时可裁切 |
+| 256 份地区导语 | Wikipedia contributors；CC BY-SA 4.0；保留原文修订版本、时间和哈希，最多五句导语，并非完整国家文章 |
 
-## 升级与校验
+完整可下载归属记录：[语料许可](https://cleantengflight.com/tenglish/resources/v1/versions/shared-64f9c833c62676b521af/learning/corpus/CORPUS-LICENSES.txt)、[逐句来源与作者](https://cleantengflight.com/tenglish/resources/v1/versions/shared-64f9c833c62676b521af/learning/corpus/tatoeba-v1.json)、[逐图摄影者与许可](https://cleantengflight.com/tenglish/resources/v1/versions/shared-64f9c833c62676b521af/learning/media/CREDITS.txt)、[图片元数据](https://cleantengflight.com/tenglish/resources/v1/versions/shared-64f9c833c62676b521af/learning/media/practice-artwork.json)、[地区导语与修订记录](https://cleantengflight.com/tenglish/resources/v1/versions/shared-64f9c833c62676b521af/learning/regions/introductions-v1.json)。这些来源不代表作者或机构对应用的背书。
 
-保持初版包名及签名，可直接覆盖安装，不要先卸载。
+## 验证与升级
 
-文件大小：15,583,930 字节。
+共享资源更新专项测试、正式签名、V12 图标像素、全部 27 份资源与统一源文件一致性、16 KB 对齐检查通过。ION 共享资源及旧版兼容接口共 37 个公开地址验证通过；Android 与 iOS 原生客户端的实际服务加载、校验及缓存验证分别通过。
+
+配套 iOS 共享资源客户端为 1.5.1（48），目前仍在准备 TestFlight；本次公开下载发布的是 Android 0.1.2（3）。
+
+本版与 0.1.0、0.1.1 使用同一包名和签名，可覆盖安装，请勿先卸载。真机体验仍需反馈，模拟器或构建验证不代表所有手机已验证。公开下载不代表已通过安卓应用商店审核。
+
+文件：`TENGlish-0.1.2-3-cn.apk`，15,603,123 字节。
 
 SHA-256：
 
 ```text
-f5251094c195825b97fc00bbf1bc4787448d9deac9c2d8ba7d2b61d69900f719
+9c06a58da3d449e934bcc55ad4914a7946484ce57440ba215a2aa37f3fd7930d
 ```
 
 [安装说明](INSTALL.md) · [隐私说明](PRIVACY.md)
-
-如果今天已经在服务故障期间检查过更新，应用会在下一个自然日启动时重试；请勿清空学习数据。更新不会打断正在进行的关卡。
